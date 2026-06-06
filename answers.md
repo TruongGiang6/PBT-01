@@ -11,4 +11,30 @@
 (Cuộc Hành Trình 0.3 Giây Xuyên Đại Dương/ Browser Rendering — Từ Code thành Hình ảnh)
 2. Trong DevTools của Chrome, tab Network cho thấy các yêu cầu (requests) và phản hồi (responses) giữa trình duyệt và máy chủ
 
+## Câu A2:
+
+- Trang web bị Google đánh giá SEO thấp vì trang web trên mắc lỗi "Div Soup". Google và các công cụ tìm kiếm sử dụng các robot crawler để đọc mã nguồn, khi dùng <div> cho mọi thứ, robot không thể phân biệt được đâu là phần đầu, đâu là nội dung chính, hay đâu là một sản phẩm cụ thể. ("Dùng đúng thẻ = Google hiểu nội dung = SEO tốt hơn." > ❌ "Div Soup" — Google không hiểu gì.")
+
+- 4 lỗi semantic: 
+1. <div class="header"> -> <header>
+2. <div class="menu"> -> <nav>
+3. <div class="main"> -> <main>
+4. <div class="product"> -> <article>
+
+- Code sửa:
+<header>
+    <div class="logo">ShopTLU</div>
+    <nav>
+        <div><a href="/">Trang chủ</a></div>
+        <div><a href="/products">Sản phẩm</a></div>
+    </nav>
+</header>
+<main>
+    <article>
+        <div class="title">iPhone 16 Pro</div>
+        <div class="price">25.990.000đ</div>
+        <div class="image"><img src="iphone.jpg"></div>
+    </article>
+</main>
+<div class="footer">© 2026 ShopTLU</div>
 
