@@ -194,3 +194,7 @@
 
 </body>
 </html>
+
+## Câu C2:
+
+- Quan điểm “dùng <div> cho mọi thứ rồi thêm class là đủ” nghe có vẻ tiện, nhưng thực tế lại gây nhiều hạn chế về kỹ thuật. Trước hết là vấn đề SEO: các công cụ tìm kiếm như Google không chỉ đọc nội dung mà còn phân tích cấu trúc HTML để hiểu đâu là phần quan trọng của trang. Khi sử dụng các thẻ semantic như <main>, <article>, <nav>, bạn đang cung cấp “ngữ cảnh” rõ ràng, giúp bot lập chỉ mục chính xác hơn. Nếu mọi thứ đều là <div>, trang web sẽ trở nên “mù nghĩa”, ảnh hưởng tiêu cực đến khả năng xếp hạng. Bên cạnh đó, semantic HTML đóng vai trò quan trọng trong Accessibility. Các công nghệ hỗ trợ như Screen Reader dựa vào cấu trúc semantic để giúp người dùng khiếm thị điều hướng nhanh giữa các khu vực như menu, nội dung chính hay phần đánh giá. Nếu chỉ dùng <div>, người dùng sẽ phải tiếp cận nội dung theo cách tuyến tính, gây khó khăn và giảm trải nghiệm đáng kể. Một ví dụ cụ thể là breadcrumb: khi dùng <nav aria-label="breadcrumb"><ol>...</ol></nav>, cả máy tìm kiếm và screen reader đều hiểu đây là hệ thống điều hướng phân cấp. Nếu thay bằng <div>, bạn phải bổ sung nhiều thuộc tính ARIA phức tạp mà vẫn kém hiệu quả. Tuy nhiên, <div> vẫn hữu ích trong các trường hợp layout thuần túy, như tạo container hoặc chia grid. Vì vậy, semantic HTML không phải là dư thừa, mà là cách viết code bền vững và chuyên nghiệp hơn
