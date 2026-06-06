@@ -102,3 +102,95 @@
 - Input types nào được dùng?
     + Thẻ nhập liệu chính có mã code: <input aria-label="..." class="shopee-searchbar-input__input" maxlength="128" placeholder="GALAXY A57 | A37 5G" autocomplete="off"... role="combobox">
     + Code không ghi rõ thuộc tính type. Theo chuẩn HTML5, khi thẻ <input> bị khuyết thuộc tính này, trình duyệt sẽ tự động nhận diện mặc định đây là ô nhập văn bản: type="text"
+
+
+## PHẦN C:
+
+## Câu C1:
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"> <!-- charset để hiển thị tiếng Việt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive -->
+    <title>Product Detail</title> <!-- tiêu đề trang -->
+</head>
+<body>
+
+<header> <!-- header: phần đầu trang -->
+    <nav> <!-- nav: menu điều hướng -->
+        <ul> <!-- danh sách menu -->
+            <li><a href="#">Trang chủ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main> <!-- main: nội dung chính -->
+    <nav aria-label="breadcrumb"> <!-- breadcrumb là điều hướng -->
+        <ol> <!-- có thứ tự -->
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Điện thoại</a></li>
+            <li>iPhone 16</li>
+        </ol>
+    </nav>
+    <section class="product"> <!-- section: khối sản phẩm -->
+        <section class="images"> <!-- nhóm ảnh -->
+            <figure> <!-- media chính -->
+                <img src="#" alt="">
+                <figcaption>Ảnh chính</figcaption>
+            </figure>
+            <div> <!-- layout ảnh nhỏ -->
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+                <img src="#" alt="">
+            </div>
+        </section>
+        <section class="info"> <!-- thông tin sản phẩm -->
+            <h1>Tên sản phẩm</h1> <!-- tiêu đề chính -->
+            <p>Giá</p> <!-- giá -->
+            <div> <!-- rating -->
+                <span>★★★★★</span>
+            </div>
+            <article> <!-- mô tả độc lập -->
+                <p>Mô tả...</p>
+            </article>
+        </section>
+    </section>
+    <section class="thongso"> <!-- thông số -->
+        <h2>Thông số</h2>
+        <table> <!-- dữ liệu dạng bảng -->
+            <tr><th>Thuộc tính</th><th>Giá trị</th></tr>
+            <tr><td>...</td><td>...</td></tr>
+        </table>
+    </section>
+    <section class="danhgia"> <!-- đánh giá -->
+        <h2>Đánh giá</h2>
+        <article> <!-- 1 review -->
+            <header> <!-- info người dùng -->
+                <strong>User</strong>
+            </header>
+            <p>Comment...</p>
+        </article>
+    </section>
+    <aside> <!-- sidebar: nội dung phụ -->
+        <h2>Sản phẩm tương tự</h2>
+        <ul>
+            <li>
+                <article> <!-- mỗi sản phẩm -->
+                    <img src="#" alt="">
+                    <h3>Tên</h3>
+                </article>
+            </li>
+        </ul>
+    </aside>
+
+</main>
+
+<footer> <!-- footer: cuối trang -->
+    <p>Footer</p>
+</footer>
+
+</body>
+</html>
