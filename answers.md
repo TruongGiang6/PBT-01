@@ -38,3 +38,16 @@
 </main>
 <div class="footer">© 2026 ShopTLU</div>
 
+## Câu A3:
+
+- Text Art: 
+ Hộp 1                                             
+ Text AText B                                      
+ Hộp 2                                             
+ Text CText D                                      
+ Hộp 3
+
+- Giải thích:
++<div>Hộp 1</div>,<div>Hộp 2</div>,<div>Hộp 1</div>: Là 1 block, chiếm riêng 1 dòng
++<span>Text A</span> <span>Text B</span>, <span>Text C</span> <strong>Text D</strong>: là inline, nằm cạnh nhau 
+
