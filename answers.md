@@ -78,3 +78,27 @@
 - Lỗi 10: Dòng 45 - Thẻ p chưa đóng - Thêm </p>
 - Lỗi 11: Dưới dòng 47 - Thiếu thẻ đóng html - Thêm </html>
 
+## Câu B4:
+
+1. ![alt text](B4.1.png)
+
+** 3 thẻ Semantic được sử dụng đúng:
+- Thẻ <header class="shopee-top...">: Nằm ở đầu trang chứa logo, thanh tìm kiếm
+- Thẻ <footer role="contentinfo"...>: Nằm ở cuối trang chứa thông tin bản quyền, liên hệ
+- Thẻ <section class="G9LJCq"...>: Dùng để phân chia một khu vực chức năng riêng biệt trên trang, cụ thể ở trang này là khu vực chứa form đăng nhập/đăng ký
+** 1 thẻ lạm dụng:
+- Dùng <div id="main"> thay vì thẻ <main>: Dùng để bọc toàn bộ nội dung chính của trang
+
+2. ![alt text](B4.2.png)
+
+- Bảng này hiển thị thông tin "Hướng Dẫn Chọn Size" của một sản phẩm thời trang. Nó chứa các số đo tương ứng với từng kích cỡ, giúp người mua đối chiếu và lựa chọn size
+- Có dùng <thead>, <tbody>: <thead> dùng để chứa hàng tiêu đề trên cùng, <tbody> dùng để bọc toàn bộ các hàng
+
+3. ![alt text](B4.3.png) (ô tìm kiếm)
+
+- Form đó có action và method không?
+    + Nhìn vào code: <form role="search" autocomplete="off" class="shopee-searchbar...">, ta thấy form này không khai báo hai thuộc tính action và method
+
+- Input types nào được dùng?
+    + Thẻ nhập liệu chính có mã code: <input aria-label="..." class="shopee-searchbar-input__input" maxlength="128" placeholder="GALAXY A57 | A37 5G" autocomplete="off"... role="combobox">
+    + Code không ghi rõ thuộc tính type. Theo chuẩn HTML5, khi thẻ <input> bị khuyết thuộc tính này, trình duyệt sẽ tự động nhận diện mặc định đây là ô nhập văn bản: type="text"
